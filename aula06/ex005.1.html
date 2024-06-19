@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background-color: rgb(29, 9, 9);
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciano DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendeno a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">clique em eu</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'purple'
+
+        
+        // var corpo = window.document.body
+        // var p1 = window.document.getElementsByTagName('p')[1]
+        // // var d = window.document.getElementById('msg')
+        // // var d = document.getElementsByName('msg')[0]
+        // // d.style.background = 'lightgreen' 
+        // var d = window.querySelector('div#msg')
+        // d.style.background = 'red'
+ 
+        // // d.innerText = 'opa bão'
+        // // d.innerText = 'mudano'
+        // // document.write(p1.innerHTML)
+        // // window.document.write('catou esse parágrafo: ' + p1.innerText)
+        // // p1.style.color = 'red'
+    </script>
+</body>
+</html>

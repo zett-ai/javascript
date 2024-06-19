@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background-color: rgb(240, 116, 234);
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mais formatações</h1>
+    <p>toFixed(n) - adiciona casas após a vírgula</p>
+    <p>toLocaleString('pt-BR', {style: 'currency', currency: 'moeda'})</p>
+    <p>replace(x , y)</p>
+    
+    <script>
+        var nome = window.prompt('qual teu nome?')
+        document.write(`Eae,<strong> ${nome}</strong>. Seu nome tem ${nome.length} letras <br>`)
+        document.write(`seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script> 
+</body>
+</html>

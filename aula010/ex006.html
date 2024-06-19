@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background-color: rgb(15, 202, 140);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;/*bom*/
+            text-align: center;
+            border: 1px solid black;
+            transition: 0.6s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        clica...?&#x1F449&#x1F448     
+    </div>
+    <h1>Eventos DOM</h1>
+    <p>mouseenter - mouse entra na div</p>
+    <p>mousemove - movimento dentro da div</p>
+    <p>mousedown - pressionar o botão</p>
+    <p>mouseup - soltar o botão</p>
+    <p>click - ???</p>
+    <p>mouseout - tira o mouse da div</p>
+
+    <script>
+         /*colocando fora, ela funciona para todas*/
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'malou ratão'
+            area.style.background = ' rgb(15, 202, 140)'//muda a cor, bobeira minha
+        }
+
+        function entrar() {
+            area.innerText = "Entrou"
+            area.style.background = 'red'//muda a cor, bobeira minha
+        }
+        function sair() {
+            area.innerText = "Saiu"
+            area.style.background = 'blue'//muda a cor, bobeira minha
+        }
+    </script>
+</body>
+</html>
