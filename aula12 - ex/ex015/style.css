@@ -1,0 +1,44 @@
+body {
+    background: #121212;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+
+p > div#res {
+    text-align: center;
+}
+
+.butao {
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 0.24rem;
+    border: 2px solid #121221;
+    box-shadow: 0.25rem 0.25rem #121212;
+
+    transition: transform 50ms, box-shadow 50ms;
+}
+
+.butao:active{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px #121221;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

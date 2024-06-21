@@ -9,7 +9,7 @@ var diaSem = agora.getDay()
     5 - Sex
     6 - Sab
 */
-// console.log(diaSem) 
+// console.log(diaSem)  
 
 switch(diaSem) {
     case 0:
